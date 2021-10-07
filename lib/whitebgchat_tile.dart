@@ -34,7 +34,7 @@ class WhiteBgChatTile extends StatelessWidget {
                         ),
                       ),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Text(
                             textChat,
@@ -48,7 +48,7 @@ class WhiteBgChatTile extends StatelessWidget {
                             style: darkgreyTextStyle.copyWith(
                                 fontSize: 14.0),
                             textAlign: TextAlign.end,
-                          )
+                          ),
                         ],
                       ),
                     ),

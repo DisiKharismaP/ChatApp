@@ -50,7 +50,7 @@ class ChatRoomTile extends StatelessWidget {
                           Text(
                             textChat,
                             style: darkgreyTextStyle.copyWith(
-                                fontSize: 16),
+                                fontSize: 16.0),
                           ),
                           SizedBox(height: 5.0),
                           Text(
