@@ -18,11 +18,12 @@ class WhiteBgChatTile extends StatelessWidget {
         children: [
           Positioned(
             child: Align(
-              alignment: FractionalOffset.bottomLeft,
+              alignment: Alignment.bottomLeft,
               child: Stack(
                 children: [
                   Positioned(
                     child: Container(
+                      margin: EdgeInsets.only(right: 40),
                       padding: EdgeInsets.symmetric(
                           horizontal: 20.0, vertical: 10.0),
                       decoration: BoxDecoration(
@@ -43,11 +44,16 @@ class WhiteBgChatTile extends StatelessWidget {
                               textAlign: TextAlign.end,
                           ),
                           SizedBox(height: 5.0),
-                          Text(
-                            timeChat,
-                            style: darkgreyTextStyle.copyWith(
-                                fontSize: 14.0),
-                            textAlign: TextAlign.end,
+                          Container(
+                            child: Align(
+                              alignment: Alignment.bottomRight,
+                              child: Text(
+                                timeChat,
+                                style: darkgreyTextStyle.copyWith(
+                                    fontSize: 14.0),
+                                textAlign: TextAlign.end,
+                              ),
+                            ),
                           ),
                         ],
                       ),
